@@ -1,0 +1,164 @@
+.footer {
+   padding: 40px 0;
+   background: url(../img/footer/footer_bg2.png) no-repeat;
+   background-position: left bottom;
+}
+
+.footer-inner {
+   display: flex;
+
+   @media (max-width: 991px) {
+      flex-wrap: wrap;
+   }
+}
+
+.footer__column-logo {
+   flex: 0 1 33.333%;
+   margin: 30px 20px 0;
+   margin-left: 0;
+
+   @media (max-width: 991px) {
+      flex: 0 0 100%;
+      margin: 0;
+      max-height: 50px;
+   }
+}
+
+.footer__column {
+   flex: 0 1 33.333%;
+   margin: 30px 20px 0;
+
+   &:last-of-type {
+      margin-right: 0;
+   }
+
+   @media (max-width: 991px) {
+      flex: 0 1 48%;
+      margin: 30px 5px 0;
+
+      &:first-of-type {
+         margin-left: 0;
+      }
+   }
+
+   @media (max-width: 565px) {
+      flex: 0 1 100%;
+      text-align: center;
+      margin: 30px 0 0;
+      padding: 0 5px;
+   }
+}
+
+
+.footer-logo {
+   transition: all 0.3s linear;
+
+   a {
+      display: flex;
+      align-items: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 40px;
+      font-weight: 600;
+      color: $black;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+      @media (max-width: 991px) {
+         font-size: 35px;
+      }
+
+      @media (max-width: 991px) {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      @media (max-width: 564px) {
+         font-size: 30px;
+      }
+
+      span {
+         color: $red;
+      }
+
+      img {
+         margin: 0 15px 0 0;
+
+         @media (max-width: 767px) {
+            height: 40px;
+         }
+
+         @media (max-width: 564px) {
+            height: 36px;
+         }
+      }
+   }
+
+   &:hover {
+      transform: scale(1.1);
+   }
+
+
+}
+
+.footer__text {
+   font-size: 25px;
+   color: $black;
+   font-weight: 600;
+   margin: 0 0 10px 0;
+}
+
+.footer__address,
+.footer__phone {
+   font-size: 18px;
+   color: $black;
+   margin: 0 0 30px 0;
+
+   a {
+      color: $black;
+   }
+}
+
+.footer__schedule {
+   background-color: $gray-bg;
+   padding: 30px;
+   border: 2px solid $red;
+   margin: 0 auto;
+   max-width: 300px;
+}
+
+.schedule__title {
+   font-size: 25px;
+   color: $black;
+   font-weight: 600;
+   margin: 0 0 20px 0;
+}
+
+.schedule__subtitle {
+   font-size: 18px;
+   color: $black;
+   font-weight: 600;
+   margin: 0 0 8px 0;
+
+   &-red {
+      color: $red;
+   }
+}
+
+.schedule__text {
+   color: $black;
+   margin: 0 0 20px 0;
+}
+
+.copyright {
+   padding: 20px 0;
+}
+
+.copyright__text {
+   text-align: center;
+
+   a {
+      color: $gray-font;
+      text-decoration: underline;
+   }
+}
